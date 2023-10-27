@@ -1,0 +1,23 @@
+
+
+<div class="main-title">Music</div>
+<div id="main-content"  class="main-content">
+
+
+    {{#each tracks}}
+        <div class="main-item">
+            <img src="{{this.imageurl}}" alt="Track">
+            <button class="item-button">
+                <span class="material-icons" onclick="getSong('{{this.linkurl}}','{{this.imageurl}}','{{this.name}}','{{this.author}}')">play_arrow</span>
+            </button>
+            <div class="item-info">
+                <div class="item-name" style="color: #ffffff">{{this.name}}</div>
+                <div class="item-artist" style="color: #818181">{{this.author}}</div>
+            </div>
+
+        </div>
+    {{/each}}
+
+
+
+</div>

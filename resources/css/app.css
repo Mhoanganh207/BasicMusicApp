@@ -1,0 +1,488 @@
+@media only screen and (max-width: 1200px) {
+  .main-item{
+    width:  11.5625em;
+    height: 15.875em;
+  }
+  .main-container{
+    padding-left: 0%;
+  }
+  .menu-sidebar{
+    display: none;
+    z-index: 1;
+  }
+
+  .player-bar{
+    width: 99%;
+  }
+
+  .menu-sidebar{
+    width: 230px;
+  }
+  .aside-icon{
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .main-item{
+    width:14.5em;
+    height: 17.9375em;
+  }
+  .main-container{
+   padding-left: 15%;
+  }
+  .player-bar{
+    width: 84%;
+  }
+  .menu-sidebar{
+    width: 15%;
+  }
+  .aside-icon{
+    display: none !important;
+  }
+  #aside{
+    display: block !important;
+  }
+}
+
+
+html,body{
+  height: 100vh;
+  margin: 0px 0px 0px 0px;
+  background : black;
+
+}
+
+.main-container{
+  background: black;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+#track-image{
+  border-radius: 50%;
+}
+
+.menu-sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: black;
+  color: pink;
+  height: 99%;
+}
+
+.logo-div{
+  height: 100px;
+  width: 92%;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 15px;
+}
+
+.logo{
+  height : 88%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.main-page{
+  overflow: hidden;
+  height: calc(100vh - 6.4em);
+  width: 99%;
+  border-radius: 15px;
+  margin: 7px 7px 0px;
+  background: linear-gradient(to bottom , #691b47, #131313 15%);
+  padding-right: 0px;
+}
+
+.aside-container{
+  font-family: 'Dela Gothic One', serif;
+  border-radius: 15px;
+  background: #131313;
+    height: 84%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+
+  margin: 0px auto 0px 7px;
+
+}
+.aside-container h7{
+  text-align: left;
+
+  color: #afa6a6;
+
+}
+.material-icons{
+  color: #afa6a6;
+  margin-right: 6px;
+}
+.aside-title{
+  width: 67%;
+  margin-top: 14px;
+  margin-left: 14px;
+  display: flex;
+
+}
+
+.aside-title:hover .material-icons{
+  color: #696868;
+}
+.aside-title:hover h7{
+  color: #696868;
+}
+
+.main-header{
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 10px auto 0px;
+
+}
+
+.main-header input{
+  background: #181818;
+  border-radius: 15px;
+  color: #737578;
+  outline: none;
+  border: none;
+  height: 35px;
+}
+.main-header .material-icons{
+  position: relative;
+  top: 10px;
+}
+
+.search-bar{
+
+  display: flex;
+
+  background: #181818;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+  height: 35px;
+}
+
+.search-bar input{
+  margin-bottom: 5px;
+  position: relative;
+  top: -6px;
+}
+
+.main-content{
+
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  height: 85%;
+  margin: 35px auto 0px;
+  overscroll-behavior: contain;
+
+}
+
+.main-item{
+
+  border-radius: 10px;
+  margin: 10px 0px 40px 43px;
+
+  background: #181818;
+  transition: background 0.4s
+}
+
+.search-bar .material-icons{
+  position: relative;
+  margin-right: 0px;
+  margin-left: 5px;
+  top: 5px;
+
+}
+:root{
+  --check-primary: transparent;
+}
+
+div::-webkit-scrollbar{
+  width: 10px;
+}
+
+.main-content::-webkit-scrollbar-track{
+ background: inherit;
+
+}
+.main-content::-webkit-scrollbar-thumb{
+  background: var(--check-primary);
+  border-radius: 10px;
+}
+
+aside::-webkit-scrollbar{
+  width: 7px;
+}
+
+aside::-webkit-scrollbar-track{
+  background: #131313;
+
+}
+aside::-webkit-scrollbar-thumb{
+  background: #5a5a5a;
+  border-radius: 10px;
+}
+
+.main-item div{
+  text-align: left;
+  font-family: 'Dela Gothic One', serif;
+
+}
+.main-item img{
+  margin-left: 11%;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+
+}
+.item-info{
+text-align: left;
+  margin-left: 19px;
+  position: relative;
+  top: -53px;
+  width: 150px;
+}
+
+.item-artist{
+  width: 150px;
+  height: 20px;
+  font-size: 13px;
+  float :left;
+  margin-top:7px;
+  float: left;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+
+}
+.item-name{
+  font-size:13px;
+
+  float: left;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  width: 95%;
+
+}
+.main-item:hover{
+  background:#232323;
+}
+
+.item-button{
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: -32%;
+  left: 63%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  transition: background 0.4s;
+  transition: .2s;
+}
+.item-button span{
+
+  font-size: 35px;
+  color: transparent;
+  position: relative;
+  left: -4px;
+  top: 2px;
+  transition: color 0.4s
+}
+
+.main-item:hover .item-button span{
+  color: black;
+}
+
+.main-item:hover .item-button{
+  background: #ec0c88;
+}
+
+.item-button:hover{
+  transform: scale(1.2)
+}
+
+.main-title{
+    font-family: 'Dela Gothic One', serif;
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: 51px;
+    color: #afa6a6;
+    overflow: hidden;
+}
+
+
+.player-bar{
+  overflow: hidden;
+  margin: 7px 7px 0px;
+  position: fixed;
+  background: #131313;
+  height: 5.9375em;
+  object-fit: contain;
+  bottom: -10px;
+  border-radius: 15px;
+  display: flex;
+
+}
+
+.track-content{
+  background: #131313;
+  border-radius: 15px;
+  height: 87%;
+  object-fit: contain;
+  width: 20%;
+
+}
+
+.track-info{
+  margin-left: 15px;
+  display: flex;
+  width: 20%;
+
+}
+.track-name{
+  overflow: hidden;
+  width:14.8em;
+  height: 1.5em;
+  font-family: 'Dela Gothic One', serif;
+  text-overflow: ellipsis;
+  margin: 13px 0px;
+  color: white;
+  font-size: 14px;
+}
+
+.track-artist{
+  font-family: 'Dela Gothic One', serif;
+  color: #818181;
+  font-size: 11px;
+}
+
+
+.track-info img{
+
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin: 13px 0px 0px 10px;
+}
+
+.main-header input::-webkit-input-placeholder{
+  font-size: 13px;
+  font-family: 'Dela Gothic One', serif;
+}
+
+.main-header input{
+  font-size: 13px;
+  font-family: 'Dela Gothic One', serif;
+}
+
+.aside-icon{
+  margin-left: 10px;
+  color: #afa6a6;
+}
+.aside-icon:hover{
+  cursor: pointer;
+  color: #696868;
+}
+
+.track-control{
+  text-align: center;
+  width: 62%;
+}
+
+
+
+#slider {
+  border-radius: 15px;
+  margin-top: 7px;
+ -webkit-appearance: none;
+  width: 45%;
+  height: 5px;
+  background: #d91389ff;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+
+#slider::-webkit-slider-thumb {
+  border-radius: 50%;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+}
+
+#slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #d91389ff;
+  cursor: pointer;
+}
+
+.track-controller{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.track-controller span{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+
+}
+
+.track-controller span:hover{
+  color: #696868;
+}
+
+.liked-list{
+  overflow-y: scroll;
+  width: 95%;
+  overscroll-behavior: contain;
+  margin: 19px auto 0px 14px;
+}
+
+.liked-item{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ .liked-item img{
+   width: 50px;
+   height: 50px;
+   object-fit: contain;
+ }
+
+ .info-item{
+   margin-left: 10px;
+ }
+
+ .info-item div{
+   width: 100%;
+   height: 20px;
+   overflow-x: hidden;
+   font-size: 15px;
+   text-align: left;
+ }

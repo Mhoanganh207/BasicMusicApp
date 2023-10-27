@@ -1,0 +1,27 @@
+<div class="player-bar">
+    <div class="track-content">
+        <div class="track-info">
+            <img id="track-image" src="/image/blank.jpg">
+            <div  style="display: flex; flex-direction: column; margin-left: 17px">
+                <div id="name" class="track-name"></div>
+                <div id="artist" class="track-artist"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="track-control">
+        <input id="slider" type="range" value="0" step="0.4" min="0" max="100">
+        <audio id="song" src=""></audio>
+        <div class="track-controller">
+            <div>
+                <span id="like" class="material-icons" onclick="likedSong()">favorite</span>
+                <span id="shuffle" class="material-icons" onclick="shuffleSong()">shuffle</span>
+            <span class="material-icons" onclick="previousSong()">skip_previous</span>
+            <span id="play-button" class="material-icons" onclick="playPause()">play_arrow</span>
+            <span class="material-icons" onclick="nextSong()">skip_next</span>
+                <span id="repeat" class="material-icons" onclick="repeatSong()">repeat</span>
+                <span id="mute" class="material-icons" onclick="muteSong()">volume_off</span>
+            </div>
+        </div>
+    </div>
+</div>
